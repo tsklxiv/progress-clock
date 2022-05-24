@@ -14,3 +14,12 @@
   justify-content: "flex-start";
   align-items: "flex-start";
 }
+
+progress {
+	background-color: #f1f2f6;
+	height: 45px;
+	border-radius: 5px;
+	margin: 0 auto;
+	overflow: hidden;
+  width: 100%;
+}

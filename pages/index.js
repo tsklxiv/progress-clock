@@ -31,6 +31,7 @@ export default function Home() {
 
         <span className="progress-title">Next minute</span>
         <span className="progress-left">{60 - time.getSeconds()} seconds left</span>
+        <br/>
         <progress className="second" value={time.getSeconds()} max="60"/>
       </main>
     </div>
