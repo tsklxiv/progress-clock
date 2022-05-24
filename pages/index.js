@@ -4,6 +4,7 @@ import {useEffect, useState} from 'react'
 export default function Home() {
   const [time, setTime] = useState(new Date())
 
+  // https://stackoverflow.com/a/59861536
   useEffect(() => {
     const interval = setInterval(() => setTime(new Date()), 1000)
     return () => {
@@ -29,7 +30,7 @@ export default function Home() {
         </p>
 
         <progress className="second" value={time.getSeconds()} max="60"/>
-        <span className="second-left">{time.getSeconds()} seconds left</span>
+        <span className="second-left">{60 - time.getSeconds()} seconds left</span>
       </main>
     </div>
   )
