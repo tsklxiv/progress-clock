@@ -1,12 +1,16 @@
 /* Custom styles */
 /* Some stolen from neal.fun/progress */
-progress-left {
+.progress-left {
   display: "flex";
-  justifyContent: "flex-end";
-  alignItems: "flex-end";
+  justify-content: "flex-end";
+  align-items: "flex-end";
 }
 
-progress-title {
+.progress-title {
   font-weight: 700;
   font-size: 26px;
+
+  display: "flex";
+  justify-content: "flex-start";
+  align-items: "flex-start";
 }
