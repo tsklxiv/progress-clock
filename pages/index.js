@@ -29,8 +29,9 @@ export default function Home() {
           Influenced by <a href="https://neal.fun/progress/">neal.fun/progress</a>.
         </p>
 
+        <span className="progress-title">Next minute</span>
+        <span className="progress-left">{60 - time.getSeconds()} seconds left</span>
         <progress className="second" value={time.getSeconds()} max="60"/>
-        <span className="second-left">{60 - time.getSeconds()} seconds left</span>
       </main>
     </div>
   )
