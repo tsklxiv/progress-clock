@@ -1,18 +1,25 @@
 /* Custom styles */
 /* Some stolen from neal.fun/progress */
 .progress-left {
-  display: "flex";
-  justify-content: "flex-end";
-  align-items: "flex-end";
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .progress-title {
-  font-weight: 700;
   font-size: 26px;
 
-  display: "flex";
-  justify-content: "flex-start";
-  align-items: "flex-start";
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.progress-info {
+  font-weight: 700;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-bottom: 10px;
 }
 
 progress {
