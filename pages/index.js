@@ -29,12 +29,28 @@ export default function Home() {
           Influenced by <a href="https://neal.fun/progress/">neal.fun/progress</a>.
         </p>
 
+        {/* Buncha boilerplate stuff here */}
+        {/* Also this is a very unconventional way to comment */}
         <div className="progress-info">
           <span className="progress-title">Next minute</span>
           <span className="progress-left">{60 - time.getSeconds()} seconds left</span>
         </div>
         <progress className="second" value={time.getSeconds()} max="60"/>
+        <div className="progress-info">
+          <span className="progress-title">Next hour</span>
+          <span className="progress-left">{60 - time.getMinutes()} minutes left</span>
+        </div>
+        <progress className="minute" value={time.getMinutes()} max="60"/>
+        <div className="progress-info">
+          <span className="progress-title">Next day</span>
+          <span className="progress-left">{24 - time.getHours()} hours left</span>
+        </div>
+        <progress className="minute" value={time.getHours()} max="24"/>
       </main>
+
+      <footer>
+        Made with <a href="https://nextjs.org">NextJS</a>
+      </footer>
     </div>
   )
 }
